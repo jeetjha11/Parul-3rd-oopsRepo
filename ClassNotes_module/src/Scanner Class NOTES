@@ -1,0 +1,102 @@
+Scanner Class:
+    A class which is used to take the input form the user
+    at the runtime. Scanner class is predefined
+
+steps for taking the input form user at the run time:
+    1-> we need to import the Scanner class:
+        import java.util.Scanner;
+        import-> it is  keyword for importing the modules or classes
+        java->   java is the library(The collection of Packages)
+        util->   util is package(The collection of Modules and classes)
+        Scanner->Scanner is class
+
+    2-> Create the object for the Scanner class:
+        syntax for creating the object in java:
+            -> ClassName objectName(variable/reference)=new ClassName();
+            ex: class Hello{
+                // class code
+            }
+            Hello hello=new Hello();
+
+            Scanner class object:
+                Scanner scanner=new Scanner(System.in);
+
+    3-> Use the Scanner object for taking the input form user:
+            int a=scanner.nextInt();
+            float f= scanner.nextFloat();
+            double d= scanner.nextDouble();
+            String name=scanner.nextLine();
+            boolean value=scanner.nextBoolean();
+
+            etc.........
+
+            code example:
+
+
+Operator:
+    This is used to perform the operation between two operands
+    ex:
+        a+b--> addition operator +
+        b/v->  division operator /
+
+    Types lo Operator:
+        1-> Arithmetic Operator:
+            It is used to perform the Mathematical Operations
+            +, - , / , * , %, ++,--
+
+        2-> Logical Operator:
+            It is used to perform the logic between two or more then two conditions:
+                Types of logical Operator:
+                    1> AND--->> &&
+                       In case of and if any condition is false then and will return
+                       false.
+                       ex:
+                       condition1     and(&&)       condition2------>> result
+                        true            &&              true            true
+                        false           &&              true            false
+                        true            &&              false           false
+                        false           &&              false           false
+
+                        NOTE: if the first condition is false  in that case && will not
+                              check the another condition
+                    2> OR--->>  ||
+                        If any ot one condition is true the or operator will return the
+                        true.
+                        ex:
+                           condition1     and(||)       condition2------>> result
+                            true            ||              true            true
+                            false           ||              true            true
+                            true            ||              false           true
+                            false           ||              false           false
+                    3> NOT--->> !
+                        If the condition is returning true then not operator will convert
+                        into false and vice-versa
+                        ex:
+                         !true--->> false
+                         !false--->> true
+        3-> Relational Operator:
+            It is used to compare the operands and returns the result.
+            It always returns value in boolean ----> true/false
+            > -> greater then
+            < ->less then
+            >=->greater then and equal to
+            <=->less then and equal to
+            == -> equal to
+
+            ex:
+                12>14-->false
+                14<12->false
+                12==13->false
+                12==12->true
+        5-> Assignment Operator:
+            This is used to assign the value for a variable
+                = --> equal to
+                ex:
+                    a=23;
+                    here a is storing 23
+        6-> Ternary Operator(condition? will execute if condition is true :will execute if condition is false):
+            ex:
+            (12>13)?System.out.println("Given Condition is True"):System.out.println("Given Condition is False")
+            output:  Given Condition is false
+
+

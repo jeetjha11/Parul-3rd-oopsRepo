@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ClassNotes_module/ClassNotes_module.iml" filepath="$PROJECT_DIR$/ClassNotes_module/ClassNotes_module.iml" />
       <module fileurl="file://$PROJECT_DIR$/LAB_CODE/LAB_CODE.iml" filepath="$PROJECT_DIR$/LAB_CODE/LAB_CODE.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Parul-3rd-oopsRepo.iml" filepath="$PROJECT_DIR$/.idea/Parul-3rd-oopsRepo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise_01/exercise_01.iml" filepath="$PROJECT_DIR$/exercise_01/exercise_01.iml" />
     </modules>
   </component>
 </project>
