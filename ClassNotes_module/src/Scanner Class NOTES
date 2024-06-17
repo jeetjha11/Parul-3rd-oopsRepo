@@ -15,8 +15,15 @@ steps for taking the input form user at the run time:
             -> ClassName objectName(variable/reference)=new ClassName();
             ex: class Hello{
                 // class code
+
+                public void display()
+                {
+                    // method code
+                }
             }
+            display()
             Hello hello=new Hello();
+            hello.display()
 
             Scanner class object:
                 Scanner scanner=new Scanner(System.in);
@@ -58,7 +65,13 @@ Operator:
                         false           &&              false           false
 
                         NOTE: if the first condition is false  in that case && will not
-                              check the another condition
+                              check the second condition
+
+                        12>13 && 13>14------>
+                        false    false------ false
+
+                        13<50 && 23<34----> true
+                        30>29 && 20<19-----> false
                     2> OR--->>  ||
                         If any ot one condition is true the or operator will return the
                         true.
@@ -68,12 +81,18 @@ Operator:
                             false           ||              true            true
                             true            ||              false           true
                             false           ||              false           false
+
+                        ex:
+                            13>14 || 23>12----->true
                     3> NOT--->> !
                         If the condition is returning true then not operator will convert
                         into false and vice-versa
                         ex:
                          !true--->> false
                          !false--->> true
+
+                         !(12>14)--->true
+                         !(12>10)---->false
         3-> Relational Operator:
             It is used to compare the operands and returns the result.
             It always returns value in boolean ----> true/false
@@ -92,9 +111,11 @@ Operator:
             This is used to assign the value for a variable
                 = --> equal to
                 ex:
-                    a=23;
+                    int a=23;
                     here a is storing 23
         6-> Ternary Operator(condition? will execute if condition is true :will execute if condition is false):
+            condition?true part:false part
+            CONDITION?:
             ex:
             (12>13)?System.out.println("Given Condition is True"):System.out.println("Given Condition is False")
             output:  Given Condition is false
