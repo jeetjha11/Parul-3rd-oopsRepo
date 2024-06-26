@@ -1,63 +1,39 @@
-import java.util.Scanner;
-
 public class Student {
-
     String name;
+    String roll_number;
     String email;
-    String enrollmentNumber;
-    String phoneNumber;
-    String gender;
     int age;
+    String gender;
+    String phoneNumber;
 
 
-
-    public void doingStudy()
-    {
-        System.out.println("Student is doing Study");
-
-    }
     public void displayStudentData()
     {
-        System.out.println( "Name: "+name+ "\n" +
-                            "Email: "+ email+ "\n" +
-                            "Enrollment Number: "+ enrollmentNumber+ "\n" +
-                            "Phone Number: "+ phoneNumber+ "\n" +
-                            "Gender: "+ gender+ "\n" +
-                            "Age: "+age);
+        System.out.println("Name: "+ name+ "\n"+
+                           "Email: "+ email+ "\n"+
+                           "Gender: "+ gender+ "\n" +
+                           "Phone Number: "+ phoneNumber +"\n" +
+                           "Roll Number: "+ roll_number);
     }
 
     public static void main(String[] args) {
-        Student student1=new Student();
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter the name");
-        student1.name=scanner.next();
-        System.out.println("Enter the Gender: ");
-        student1.gender=scanner.next();
-        System.out.println("Enter the phone number: ");
-        student1.phoneNumber=scanner.next();
+        Student rahul=new Student();
+        rahul.name="Rahul";
+        rahul.email="rahul@gmail.com";
+        rahul.phoneNumber="312313123";
+        rahul.gender="Male";
+        rahul.roll_number="1010";
+        rahul.displayStudentData();
 
-        student1.enrollmentNumber="1000001";
-        System.out.println("Enter the age: ");
-        student1.age=scanner.nextInt();
+        Student Manisha=new Student();
+        Manisha.name="Manisha";
+        Manisha.email="manisha@gmai.com";
+        Manisha.gender="Femail";
+        Manisha.phoneNumber="12312313";
+        Manisha.roll_number="10122";
 
-        student1.displayStudentData();
+        Manisha.displayStudentData();
 
-
-        Student student2=new Student();
-
-
-        System.out.println("Enter the name");
-        student2.name=scanner.next();
-        System.out.println("Enter the Gender: ");
-        student2.gender=scanner.next();
-        System.out.println("Enter the phone number: ");
-        student2.phoneNumber=scanner.next();
-
-        student2.enrollmentNumber="1000001";
-        System.out.println("Enter the age: ");
-        student2.age=scanner.nextInt();
-
-        student2.displayStudentData();
 
     }
 }
