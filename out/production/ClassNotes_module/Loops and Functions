@@ -1,0 +1,56 @@
+loops:
+    It is used to iterate through the same code again
+    and again till the condition is satisfied
+
+    Types of loop:
+        1-> for() loop:
+            Syntax of for loop:
+                for(initialization; condition; increment/decrement)
+                {
+                    // loop code
+                }
+                ->here initialization is to initialize the value for a
+                variable
+                ->condition-> according to the condition the loop will
+                  start execution once the condition will be false
+                  the loop will terminate.
+                  increment/decrement-> for changing the value of
+                  the used variable
+
+                ex:
+                    print 0-10 using for loop:
+                        public class LoopDemo
+                        {
+                            public static void main(String []args)
+                            {
+                                        1     2
+                                for(int i=0;i<=10;i++)   i=11
+                                {
+                                    System.out.println(i)   0,1,2...9,10
+                                }
+
+                                // rest of code
+                            }
+                            // input-- enter the starting range--23
+                            //enter the ending range--28
+                            // output: 23,25,27
+
+                        }
+
+                NOTES: in case of for loop we know the number of iterations
+                        that's why the for loop is also called as static loop
+        2-> while() loop:
+            syntax:
+                while(condition)
+                {
+                    //while loop code
+                }
+                ex:
+                    int i=0;
+                    while(i<=10)
+                    {
+                        System.out.println(i+ " ");
+                        i++;
+                    }
+
+        3-> do()-while() loop

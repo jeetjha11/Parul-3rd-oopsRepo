@@ -1,0 +1,118 @@
+java is object oriented programing language
+
+basic syntax:
+    public class ClassName
+    {
+        public static void main(String [] args)
+        {
+          // code
+        }
+    }
+
+    ex:
+    public class Hello
+    {
+        public static void main(String [] args)
+        {
+            // print
+            System.out.println("Hello World!!")
+        }
+    }
+
+    Rule: In case of java the file name and the class name should be
+          same:
+          How you will save the above class??
+          Hello.java
+
+
+
+
+    here public is access modifier
+    class is keyword
+    class is a user define data type:
+    Class first latter should be capital
+    Java follows the camel case
+    ex:
+        suppose there is a class named as
+        print book
+
+        Printbook----> class PrintBook
+
+
+    Steps for running a java program on notepad:
+    1> create a java file write the code
+    2> save the java file
+    3> Go the file location and open the cmd:
+    4> Compile the java code:
+        javac ClassName.java--> javac Hello.java
+        it is generating a another .class file from the resource file
+        Hello.java--------->  Hello.class
+        Note:
+            this class file contains the byte code which is executable for
+            all os.
+
+        Here javac is a inbuilt compiler given by jdk
+
+
+    5> Run the byte code file:
+        java ClassName--> java Hello
+
+
+    Variables:
+    It is a container/memory location name/reference which is used to store the data
+    into the memory
+    syntax:
+        dataType variableName=variableValue;
+        ex:
+        String name="Sita";
+        String lastName="Devi";
+        Note:  variableName should be always start with small latter
+
+
+    Data Type:
+        1> Primitive--> which is previously defined
+            ex: int,float,char,double,short,long,boolean
+        2> Non-Primitive--> it is defined by user
+            ex:
+                Array, Class, String
+
+    Scanner:
+       It is a predefined class which is used to take the input from the user at runtime of
+       program
+
+       Steps for use Scanner class:
+       1-> import th Scanner class
+        import java.util.Scanner;
+        import-> is a keyword used for import the class
+        java->   It is a Library(The collection of Packages)
+        util->   It is a Package(The collection of Classes)
+
+
+       2-> We have to create an object for the Scanner Class:
+
+            Syntax for creating an object:
+                ClassName Objectname=new ClassName();
+                Hello  h=new Hello();
+
+
+          Scanner abc=new Scanner(System.in);
+       3-> Take input:
+            int type of value:
+                int a=abc.nextInt();
+                float f=abc.nextFloat();
+                String name=abc.next()/ abc.nextLine();
+                double d=abc.nextDouble();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
