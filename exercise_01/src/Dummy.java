@@ -1,24 +1,53 @@
 import java.util.Scanner;
-public class Dummy {
 
-    String name;
+public  class Dummy
+{
 
-    public void add(int a,int b)
+    public  int findFibonacciNumberOfNthTermByRecursiveMethod(int n)
     {
-        System.out.println(a+b);
+
+        if(n<=1)
+        {
+            return n;
+        }
+        else {
+            return findFibonacciNumberOfNthTermByRecursiveMethod(n-1)+findFibonacciNumberOfNthTermByRecursiveMethod(n-2);
+
+        }
+
+
+
+    }
+
+    public void findFibonacciNumberOfNthTermByNonRecursiveMethod(int n) {
+
+        double first = 0;
+        double second = 1;
+        double next=0;
+
+        System.out.print( first + " " + second + " ");
+
+        for (int i = 2; i <= n; i++) {
+            next = first + second;
+            first = second;
+            second = next;
+            System.out.print((int) next + " ");
+
+        }
+        System.out.println("Nth Term Value of Fibonacci is: " + next);
+
     }
     public static void main(String[] args) {
-        Dummy d=new Dummy();
-        d.add(1,3);
-        d.name="sdfsf";
-        System.out.println(d.name);
 
+        Dummy dummy=new Dummy();
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the terms: ");
+        dummy.findFibonacciNumberOfNthTermByNonRecursiveMethod(scanner.nextInt());
 
-
-
-
-
+        System.out.println("By recursive Function: ");
+        int result=dummy.findFibonacciNumberOfNthTermByRecursiveMethod(scanner.nextInt());
+        System.out.println("Result is: "+ result);
+    }
 
 
     }
-}
