@@ -1,0 +1,23 @@
+Constructor:
+
+define a method:
+public void functionName()
+{
+
+}
+ex: of constructor:
+        class Abc{
+
+            public Abc()
+            {
+                 //constructor body
+            }
+            public void display()
+            {
+            }
+
+        }
+
+        // creating object for class Abc
+        Abc abc=new Abc();
+       abc.display();
