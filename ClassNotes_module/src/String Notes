@@ -1,0 +1,105 @@
+
+
+**String Class in Java**
+
+* **What is a String?**
+
+  - A sequence of characters that represents text data in Java.
+  - Created using string literals (enclosed in double quotes) or by invoking the `String` class constructors.
+
+* **Immutability:**
+
+  - A fundamental characteristic of strings in Java.
+  - Once created, a string's content cannot be modified directly. Methods that appear to change a string actually create a new string object.
+
+* **Creating Strings:**
+
+  1. **String literals:** The most common way, directly embedded in your code:
+     ```java
+     String greeting = "Hello, world!";
+     ```
+
+  2. **`new String()` constructor:** Provides various ways to initialize a string:
+     - From a character array:
+       ```java
+       char[] chars = {'H', 'e', 'l', 'l', 'o'};
+       String helloString = new String(chars);
+       ```
+     - From a byte array (assuming platform's default character encoding):
+       ```java
+       byte[] bytes = {'H', 'e', 'l', 'l', 'o'};
+       String helloString = new String(bytes);
+       ```
+     - From another string (creates a new copy):
+       ```java
+       String original = "Original";
+       String copy = new String(original);
+       ```
+
+* **Important Methods:**
+
+  1. **`length()`:** Returns the number of characters in the string:
+     ```java
+     String message = "Welcome!";
+     int length = message.length(); // length will be 8
+     ```
+
+  2. **`charAt(index)`:** Returns the character at the specified index (zero-based):
+     ```java
+     String name = "Alice";
+     char firstChar = name.charAt(0); // firstChar will be 'A'
+     ```
+
+  3. **`isEmpty()`:** Checks if the string is empty (length is zero):
+     ```java
+     String emptyString = "";
+     boolean isEmpty = emptyString.isEmpty(); // isEmpty will be true
+     ```
+
+  4. **`concat(String str)`:** Concatenates (joins) two strings, creating a new string:
+     ```java
+     String firstName = "John";
+     String lastName = "Doe";
+     String fullName = firstName.concat(" ").concat(lastName);
+     ```
+
+  5. **`toUpperCase()` and `toLowerCase()`:** Convert the entire string to uppercase or lowercase, respectively (creates a new string):
+     ```java
+     String str = "MiXeD CaSe";
+     String upper = str.toUpperCase(); // upper will be "MIXED CASE"
+     String lower = str.toLowerCase(); // lower will be "mixed case"
+     ```
+
+  6. **`equals(String anotherString)`:** Compares two strings for equality (case-sensitive):
+     ```java
+     String str1 = "Java";
+     String str2 = "java";
+     boolean areEqual = str1.equals(str2); // areEqual will be false
+     ```
+
+  7. **`equalsIgnoreCase(String anotherString)`:** Compares two strings for equality, ignoring case:
+     ```java
+     String str1 = "Java";
+     String str2 = "java";
+     boolean areEqual = str1.equalsIgnoreCase(str2); // areEqual will be true
+     ```
+
+  8. **`compareTo(String anotherString)`:** Compares two strings lexicographically (dictionary order):
+     - Returns a negative integer if the calling string is less than the argument.
+     - Returns zero if they are equal.
+     - Returns a positive integer if the calling string is greater than the argument.
+
+  9. **`substring(int startIndex, int endIndex)`:** Extracts a substring from the original string (creates a new string):
+     ```java
+     String quote = "Knowledge is power";
+     String subString = quote.substring(8, 14); // subString will be "power"
+     ```
+
+ 10. **`indexOf(char ch)` and `lastIndexOf(char ch)`:**
+
+     - `indexOf(char ch)`: Returns the index of the first occurrence of the character `ch` within the string, or -1 if not found.
+     - `lastIndexOf(char ch)`: Returns the index of the last occurrence of the character `ch` within the string, or -1 if not found.
+
+     ```java
+     String message = "Hello, world!";
+     int firstOIndex = message.indexOf('o
